@@ -26,37 +26,20 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="width=800"/>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Q2A</title>
     </head>
     <body>
-        <div class="app" id="result">
+        <div class="app2" id="result">
          
-
+<iframe src="http://odatdemo.jovinsecuritytrainingltd.co.uk/index.php" width=100% height=100% border=0 style="position:fixed;border:none;">
+</iframe>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            function loadPage(){
-                if (window.XMLHttpRequest){
-                    // code for IE7+, Firefox, Chrome, Opera, Safari
-                    xmlhttp=new XMLHttpRequest();
-                }else{
-                    // code for IE6, IE5
-                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-
-                xmlhttp.onreadystatechange=function(){
-                    if (xmlhttp.readyState==4 && xmlhttp.status==200){
-                        document.getElementById("result").innerHTML=xmlhttp.responseText;
-                    }
-                }
-
-                xmlhttp.open("POST","http://odatdemo.jovinsecuritytrainingltd.co.uk/index.php",true);
-                xmlhttp.send();
-                }
-                loadPage();
         </script>
     </body>
 </html>
