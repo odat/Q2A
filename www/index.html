@@ -64,12 +64,9 @@ body
 }
 </style>
 <script type="text/javascript">
-
-var scale = 'scale(1)';
-document.body.style.webkitTransform =       // Chrome, Opera, Safari
- document.body.style.msTransform =          // IE 9
- document.body.style.transform = scale;     // General
-
+window.onload = function() {
+setTimeout(function() { window.scrollTo(0,1); }, 10);
+}
 </script>
     </head>
     <body>
